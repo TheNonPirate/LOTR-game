@@ -1,11 +1,11 @@
 var programCode = function(processingInstance) {
     with (processingInstance) {
       size(400, 400); 
-      frameRate(30);
+      frameRate(60);
         
         
         
-        /*credit to my pixel art generator for these graphics:
+        /*credit to OsuKi-ai's pixel art generator for these graphics:
 //https://www.khanacademy.org/computer-programming/pixel-art-generator-v211/5790860974456832
 */
 
@@ -14,7 +14,7 @@ var loadNum = 0;
 var numImgsLoaded = 0;
 
 //these three variables save all the graphics for the pixel artwork. All of the pixel art you see on the screen in in here.
-var pallets = {
+var palettes = {
 AB:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
@@ -163,7 +163,7 @@ colorString:["",
 "17 4b",
 "17 3b",
 "17 bb",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
 burst_fire_cycle:[
     //reaching for string 1
@@ -208,7 +208,7 @@ colorString:[
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //grasping string 2
     {
@@ -253,7 +253,7 @@ colorString:[
 "36 ",
 "36 ",
 ],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //drawing string 2
     {
@@ -298,7 +298,7 @@ colorString:[
 "36 ",
 "36 ",
 ],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //string drawn, feeding arrow into firing chamber
     {
@@ -341,7 +341,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //arrow in firing chamber
     {
@@ -384,7 +384,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //fired
     {
@@ -427,370 +427,291 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
 ],
 burst_reload_blank:[
     //arrow reach
     {
 colorString:[
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                    bggeee          ",
-"                    bgg  d          ",
-"                   bbgg             ",
-"                   bbgg             ",
-"                  bbbgg             ",
-"                  bb gg  d          ",
-"                 ccb ggeee          ",
-"                 cc                 ",
-"                abba                ",
-"               aabbaa               ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            bb aabbaa               ",
-"                abba                ",
-"                 cc ff",
-"                 ccbbf",
-"                 bbbb",
-"                  bb",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"20 bgg3e10 ",
+"20 bgg  d10 ",
+"19 bbgg13 ",
+"19 bbgg13 ",
+"18 3bgg13 ",
+"18 bb gg  d10 ",
+"17 ccb gg3e10 ",
+"17 cc17 ",
+"16 abba16 ",
+"15 aabbaa15 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 bb aabbaa15 ",
+"16 abba16 ",
+"17 cc ff",
+"17 ccbbf",
+"17 4b",
+"18 bb",
 ],
-pallet:{
-" ":color(255,255,255,0),
-"a":color(210,210,210,255),
-"b":color(190,190,190,255),
-"c":color(170,170,170,255),
-"d":color(150,150,150,255),
-"e":color(130,130,130,255),
-"f":color(255,200,150,255),
-"g":color(145,95,45,255),
-"h":color(218,182,113,255),
-"i":color(238,202,133,255),
-       },
+palette:palettes.Burst,
     },
     //reaching for arrow
     {
 colorString:[
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                    bggeee          ",
-"                    bgg  d          ",
-"                   bbgg             ",
-"                   bbgg             ",
-"                  bbbgg             ",
-"                  bb gg  d          ",
-"                 ccb ggeee          ",
-"                 cc                 ",
-"                abba                ",
-"               aabbaa               ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            bb aabbaa               ",
-"                abba                ",
-"                 ff",
-"                 ff",
-"                 bb",
-"                 bb",
-"                 bb",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"20 bgg3e10 ",
+"20 bgg  d10 ",
+"19 bbgg13 ",
+"19 bbgg13 ",
+"18 3bgg13 ",
+"18 bb gg  d10 ",
+"17 ccb gg3e10 ",
+"17 cc17 ",
+"16 abba16 ",
+"15 aabbaa15 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 bb aabbaa15 ",
+"16 abba16 ",
+"17 ff",
+"17 ff",
+"17 bb",
+"17 bb",
+"17 bb",
 ],
-pallet:{
-" ":color(255,255,255,0),
-"a":color(210,210,210,255),
-"b":color(190,190,190,255),
-"c":color(170,170,170,255),
-"d":color(150,150,150,255),
-"e":color(130,130,130,255),
-"f":color(255,200,150,255),
-"g":color(145,95,45,255),
-"h":color(218,182,113,255),
-"i":color(238,202,133,255),
-       },
+palette:palettes.Burst,
     },
     //grabbing arrow
     {
 colorString:[
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                    bggeee          ",
-"                    bgg  d          ",
-"                   bbgg             ",
-"                   bbgg             ",
-"                  bbbgg             ",
-"                  bb gg  d          ",
-"                 ccb ggeee          ",
-"                 cc                 ",
-"                abba                ",
-"               aabbaa               ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            bf aabbaa               ",
-"            ffb abba                ",
-"             bbb dd",
-"              bbbdd",
-"               bbbb",
-"                bb",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"20 bgg3e10 ",
+"20 bgg  d10 ",
+"19 bbgg13 ",
+"19 bbgg13 ",
+"18 3bgg13 ",
+"18 bb gg  d10 ",
+"17 ccb gg3e10 ",
+"17 cc17 ",
+"16 abba16 ",
+"15 aabbaa15 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 bf aabbaa15 ",
+"12 ffb abba16 ",
+"13 3b dd",
+"14 3bdd",
+"15 4b",
+"16 bb",
 ],
-pallet:{
-" ":color(255,255,255,0),
-"a":color(210,210,210,255),
-"b":color(190,190,190,255),
-"c":color(170,170,170,255),
-"d":color(150,150,150,255),
-"e":color(130,130,130,255),
-"f":color(255,200,150,255),
-"g":color(145,95,45,255),
-"h":color(218,182,113,255),
-"i":color(238,202,133,255),
-       },
+palette:palettes.Burst,
     },
     //removing arrow
     {
 colorString:[
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                    bggeee          ",
-"                    bgg  d          ",
-"                   bbgg             ",
-"                   bbgg             ",
-"                  bbbgg             ",
-"                  bb gg  d          ",
-"                 ccb ggeee          ",
-"                 cc                 ",
-"                abba                ",
-"               aabbaa               ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            bb aabbaa               ",
-"            h   abba                ",
-"            hh   dd                 ",
-"             h   dd                 ",
-"             hh  bb                 ",
-"              h  bb                 ",
-"              h bbb                 ",
-"               fbb                  ",
-"                f                   ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"20 bgg3e10 ",
+"20 bgg  d10 ",
+"19 bbgg13 ",
+"19 bbgg13 ",
+"18 3bgg13 ",
+"18 bb gg  d10 ",
+"17 ccb gg3e10 ",
+"17 cc17 ",
+"16 abba16 ",
+"15 aabbaa15 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 bb aabbaa15 ",
+"12 h3 abba16 ",
+"12 hh3 dd17 ",
+"13 h3 dd17 ",
+"13 hh  bb17 ",
+"14 h  bb17 ",
+"14 h 3b17 ",
+"15 fbb18 ",
+"16 f19 ",
 ],
-pallet:{
-" ":color(255,255,255,0),
-"a":color(210,210,210,255),
-"b":color(190,190,190,255),
-"c":color(170,170,170,255),
-"d":color(150,150,150,255),
-"e":color(130,130,130,255),
-"f":color(255,200,150,255),
-"g":color(145,95,45,255),
-"h":color(218,182,113,255),
-"i":color(238,202,133,255),
-       },
+palette:palettes.Burst,
     },
     //returning arrow to bow
     {
-colorString:[
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                    bggeee          ",
-"                    bgg  d          ",
-"                   bbgg             ",
-"                   bbgg             ",
-"                  bbbgg             ",
-"                  bb gg  d          ",
-"                 ccb ggeee          ",
-"                 cc                 ",
-"                abba                ",
-"               aabbaa               ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            bb aabbaa               ",
-"                abba                ",
-"                 dd                 ",
-"                 dd                 ",
-"                 bb                 ",
-"                 bb                 ",
-"                 bb                 ",
-"                 bbb",
-"  aahhhhhhhhhhhhhffh",
-"                  bb",
+colorString:["36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"20 bgg3e10 ",
+"20 bgg  d10 ",
+"19 bbgg13 ",
+"19 bbgg13 ",
+"18 3bgg13 ",
+"18 bb gg  d10 ",
+"17 ccb gg3e10 ",
+"17 cc17 ",
+"16 abba16 ",
+"15 aabbaa15 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 bb aabbaa15 ",
+"16 abba16 ",
+"17 dd17 ",
+"17 dd17 ",
+"17 bb17 ",
+"17 bb17 ",
+"17 bb17 ",
+"17 3b",
+"  aa13hffh",
+"18 bb",
 ],
-pallet:{
-" ":color(255,255,255,0),
-"a":color(210,210,210,255),
-"b":color(190,190,190,255),
-"c":color(170,170,170,255),
-"d":color(150,150,150,255),
-"e":color(130,130,130,255),
-"f":color(255,200,150,255),
-"g":color(145,95,45,255),
-"h":color(218,182,113,255),
-"i":color(238,202,133,255),
-       },
+palette:palettes.Burst
     },
     //returning arrow to bow part 2
     {
-colorString:[
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                    bggeee          ",
-"                    bgg  d          ",
-"                   bbgg             ",
-"                   bbgg             ",
-"                  bbbgg             ",
-"                  bb gg  d          ",
-"                 ccb ggeee          ",
-"                 cc                 ",
-"                abba                ",
-"               aabbaa               ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            ggaaabbaaa              ",
-"            bb aabbaa               ",
-"                abba                ",
-"                 cc     a           ",
-"                 cc    h            ",
-"                 bb  fh             ",
-"                 bb bff             ",
-"                 bbbbb              ",
-"                 bbbb               ",
-"                  bb                ",
+colorString:["36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"20 bgg3e10 ",
+"20 bgg  d10 ",
+"19 bbgg13 ",
+"19 bbgg13 ",
+"18 3bgg13 ",
+"18 bb gg  d10 ",
+"17 ccb gg3e10 ",
+"17 cc17 ",
+"16 abba16 ",
+"15 aabbaa15 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 gg3abb3a14 ",
+"12 bb aabbaa15 ",
+"16 abba16 ",
+"17 cc5 a11 ",
+"17 cc4 h12 ",
+"17 bb  fh13 ",
+"17 bb bff13 ",
+"17 5b14 ",
+"17 4b15 ",
+"18 bb16 ",
 ],
-pallet:{
-" ":color(255,255,255,0),
-"a":color(210,210,210,255),
-"b":color(190,190,190,255),
-"c":color(170,170,170,255),
-"d":color(150,150,150,255),
-"e":color(130,130,130,255),
-"f":color(255,200,150,255),
-"g":color(145,95,45,255),
-"h":color(218,182,113,255),
-"i":color(238,202,133,255),
-       },
+palette:palettes.Burst,
     },
     //about to load arrow
     {
 colorString:[
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                    bggeee          ",
-"                    bgg  d          ",
-"                   bbgg             ",
-"                   bbgg     a       ",
-"                  bbbgg     a       ",
-"                  bb gg  d  h       ",
-"                 ccb ggeee h        ",
-"                 cc        h        ",
-"                abba       h        ",
-"               aabbaa     h         ",
-"            ggaaabbaaa    h         ",
-"            ggaaabbaaa    h         ",
-"            ggaaabbaaa   h          ",
-"            ggaaabbaaa   h          ",
-"            bb aabbaa    f          ",
-"                abba    bff         ",
-"                 ccb   bbb          ",
-"                 ccbbb bb           ",
-"                  bbbbbbb           ",
-"                    bbbb            ",
-"                      bb            ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
-"                                    ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"20 bgg3e10 ",
+"20 bgg  d10 ",
+"19 bbgg13 ",
+"19 bbgg5 a7 ",
+"18 3bgg5 a7 ",
+"18 bb gg  d  h7 ",
+"17 ccb gg3e h8 ",
+"17 cc8 h8 ",
+"16 abba7 h8 ",
+"15 aabbaa5 h9 ",
+"12 gg3abb3a4 h9 ",
+"12 gg3abb3a4 h9 ",
+"12 gg3abb3a3 h10 ",
+"12 gg3abb3a3 h10 ",
+"12 bb aabbaa4 f10 ",
+"16 abba4 bff9 ",
+"17 ccb3 3b10 ",
+"17 cc3b bb11 ",
+"18 7b11 ",
+"20 4b12 ",
+"22 bb12 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
+"36 ",
 ],
-pallet:{
-" ":color(255,255,255,0),
-"a":color(210,210,210,255),
-"b":color(190,190,190,255),
-"c":color(170,170,170,255),
-"d":color(150,150,150,255),
-"e":color(130,130,130,255),
-"f":color(255,200,150,255),
-"g":color(145,95,45,255),
-"h":color(218,182,113,255),
-"i":color(238,202,133,255),
-       },
+palette:palettes.Burst
     },
 ],
 burst_reload:[
@@ -828,7 +749,7 @@ colorString:["36 ",
 "17 ccbbf",
 "17 4b",
 "18 bb",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //reaching for arrow pt 2 time 2
     {
@@ -865,7 +786,7 @@ colorString:["36 ",
 "17 bb",
 "17 bb",
 "17 bb",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //grabbing arrow time 2
     {
@@ -901,7 +822,7 @@ colorString:["36 ",
 "14 3bdd",
 "15 4b",
 "16 bb",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //removing arrow time 2
     {
@@ -940,7 +861,7 @@ colorString:["36 ",
 "14 h 3b17 ",
 "15 fbb18 ",
 "16 f19 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //returning arrow to bow time 2
     {
@@ -980,7 +901,7 @@ colorString:["36 ",
 "17 3b",
 "  aa13hffh",
 "18 bb",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //returning arrow
     {
@@ -1020,7 +941,7 @@ colorString:["36 ",
 "17 4b15 ",
 "18 bb16 ",
 ],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //loading arrow
     {
@@ -1064,7 +985,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 ],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
 ],
 mult_ready:{
@@ -1108,7 +1029,7 @@ colorString:["39 ",
 "39 ",
 "39 ",
 "39 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
 mult_fired:{
 colorString:["40 ",
@@ -1151,7 +1072,7 @@ colorString:["40 ",
 "40 ",
 "40 ",
 "40 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
 crossBasicR2F:{
 colorString:["40 ",
@@ -1184,7 +1105,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
 };//2
 var saveVars = {
@@ -1218,7 +1139,7 @@ colorString:["",
 "17 >>4?3>",
 "18 7>",
 "19 5>",],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 ">":color(255,0,0,255),
 "?":color(255,113,0,255),
@@ -1256,7 +1177,7 @@ colorString:["",
 "16 >> 10>",
 "18 10>",
 "19 8>",],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 ">":color(255,0,0,255),
 "?":color(255,113,0,255),
@@ -1297,7 +1218,7 @@ colorString:["",
 "16 3> 5> ?>>",
 "17 3>  6>",
 "17 9>",],
-pallet:{
+palette:{
 " ":color(255,255,0,0),
 ">":color(255,0,0,255),
 "?":color(255,113,0,255),
@@ -1345,7 +1266,7 @@ colorString:["",
 "  >9 > ??>4 3> >9 3>",
 "10 >>  ?>>16 > 3>",
 "12 >> >12 >?",],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 ">":color(255,0,0,255),
 "?":color(255,113,0,255),
@@ -1393,7 +1314,7 @@ colorString:["",
 "5 5>??10>?4> >  >>3 3>",
 "7 5>  ??6>?>>6 3>3 >>",
 "  >7 4> >4 >>?>>5 ? >>4 >",],
-pallet:{
+palette:{
 " ":color(255, 255, 255, 0),
 ">":color(255,0,0,255),
 "?":color(255,113,0,255),
@@ -1442,7 +1363,7 @@ colorString:["",
 "5 >>4 ?  > 6>?4> >  >>3 >>",
 "7 5>  ??>  >3 >>6 3>3 >>",
 "  >7 4> >4 >>?>>5 ?  >",],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 ",":color(0,0,255,255),
 ">":color(255,0,0,255),
@@ -1495,7 +1416,7 @@ colorString:["8 24`",
 "18 4`",
 "19 `` ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "`":color(255,0,0,175),
 "~":color(255,255,255,255),
@@ -1524,7 +1445,7 @@ colorString:["4 5a",
 "4 5a",
 "5 3a",
 "6 a",],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(255,0,0,150),
 
@@ -1570,7 +1491,7 @@ colorString:["",
 "18 5b",
 "19 3b",
 "20 b",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //just after firing 2 (for emphasis we repeat this step)
     {
@@ -1607,7 +1528,7 @@ colorString:["",
 "18 5b",
 "19 3b",
 "20 b",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //reaching for an arrow 1
     {
@@ -1643,7 +1564,7 @@ colorString:["",
 "17 ccbbf",
 "17 4b",
 "18 bb",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //reaching for an arrow 2
     {
@@ -1680,7 +1601,7 @@ colorString:["",
 "17 bb",
 "17 bb",
 "17 bb",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //grabbing arrow
     {
@@ -1716,7 +1637,7 @@ colorString:["",
 "14 3bdd",
 "15 4b",
 "16 bb",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //removing arrow
     {
@@ -1755,7 +1676,7 @@ colorString:["",
 "14 h 3b",
 "15 fbb",
 "16 f",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //holding arrow 1
     {
@@ -1795,7 +1716,7 @@ colorString:["",
 "17 3b",
 "  aa13hffh",
 "18 bb",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //holding arrow 2
     {
@@ -1838,7 +1759,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //about to string arrow
     {
@@ -1881,7 +1802,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //stringing arrow
     {
@@ -1924,7 +1845,7 @@ colorString:["22 a13 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //drawing arrow
     {
@@ -1967,7 +1888,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.AB,
+palette:palettes.AB,
     },
     //bow completely drawn and ready to fire
     repeats.archer_basic_drawn,
@@ -2012,7 +1933,7 @@ colorString:["36 ",
 "17 bb17 ",
 
 ],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //bow completely drawn and ready to fire
     {
@@ -2051,7 +1972,7 @@ colorString:["36 ",
 "17 4b15 ",
 "17 3b16 ",
 "17 bb17 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //just after firing
     {
@@ -2096,7 +2017,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 ],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //just after firing 2 (for emphasis we repeat this step)
     {
@@ -2140,7 +2061,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //reaching for an arrow 1
     {
@@ -2184,7 +2105,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //reaching for an arrow 2
     {
@@ -2228,7 +2149,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //grabbing arrow
     {
@@ -2272,7 +2193,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //removing arrow
     {
@@ -2316,7 +2237,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //holding arrow 1
     {
@@ -2360,7 +2281,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //holding arrow 2
     {
@@ -2400,7 +2321,7 @@ colorString:["",
 "17 5b",
 "17 4b",
 "18 bb",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //about to string arrow
     {
@@ -2444,7 +2365,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //stringing arrow
     {
@@ -2488,7 +2409,7 @@ colorString:["22 a13 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     //drawing arrow
     {
@@ -2532,7 +2453,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.BB,
+palette:palettes.BB,
     },
     ],//2
 archer_burst_bow:[
@@ -2628,7 +2549,7 @@ colorString:[
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //arrow in firing chamber 5
     {
@@ -2672,7 +2593,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 ],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //fired 5
     {
@@ -2716,7 +2637,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 ],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //fired 5 repeat 1
     {
@@ -2759,7 +2680,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //fired 5 repeat 2
     {
@@ -2802,7 +2723,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //fired 5 repeat 3
     {
@@ -2846,7 +2767,7 @@ colorString:[
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.Burst,
+palette:palettes.Burst,
     },
     //}
     //FIRST RELOAD{
@@ -3052,7 +2973,7 @@ colorString:["40 ",
 "40 ",
 "40 ",
 "40 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //reaching for an arrow 2
     {
@@ -3096,7 +3017,7 @@ colorString:["40 ",
 "40 ",
 "40 ",
 "40 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //grabbing arrow
     {
@@ -3140,7 +3061,7 @@ colorString:["40 ",
 "40 ",
 "40 ",
 "40 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //removing arrow
     {
@@ -3183,7 +3104,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //holding arrow 1
     {
@@ -3226,7 +3147,7 @@ colorString:["36 ",
 "8 3h",
 "5 3h",
 "3 aa",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //holding arrow 2
     {
@@ -3269,7 +3190,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //about to string arrow
     {
@@ -3312,7 +3233,7 @@ colorString:["36 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //stringing arrow
     {
@@ -3355,7 +3276,7 @@ colorString:["21 3a12 ",
 "36 ",
 "36 ",
 "36 ",],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //drawing arrow
     {
@@ -3400,7 +3321,7 @@ colorString:[
 "36 ",
 "36 ",
 ],
-pallet:pallets.SB,
+palette:palettes.SB,
     },
     //bow completely drawn and ready to fire
     repeats.mult_ready,
@@ -3440,7 +3361,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 1
     {
@@ -3474,7 +3395,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 2
     {
@@ -3508,7 +3429,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 3
     {
@@ -3542,7 +3463,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 4
     {
@@ -3576,7 +3497,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 5
     {
@@ -3610,7 +3531,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 6
     {
@@ -3644,7 +3565,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 7
     {
@@ -3678,7 +3599,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 8
     {
@@ -3712,7 +3633,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 7
     {
@@ -3746,7 +3667,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 8
     {
@@ -3780,7 +3701,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 9
     {
@@ -3814,7 +3735,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 10
     {
@@ -3848,7 +3769,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //turning crank 11
     {
@@ -3882,7 +3803,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 1
     {
@@ -3916,7 +3837,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 2
     {
@@ -3950,7 +3871,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 3
     {
@@ -3984,7 +3905,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 4
     {
@@ -4018,7 +3939,7 @@ colorString:["40 ",
 "20 f3ed4c11 ",
 "20 4fdcc13 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 5 (I HAVE A BOLT! BEGONE!)
     {
@@ -4052,7 +3973,7 @@ colorString:["40 ",
 "20 fea3hd13 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 6
     {
@@ -4087,7 +4008,7 @@ colorString:["40 ",
 "20 4f6 h9 ",
 "31 h8 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 7
     {
@@ -4121,7 +4042,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 8
     {
@@ -4155,7 +4076,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loading 9
     {
@@ -4189,7 +4110,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loaded and returning hand to trigger 1
     {
@@ -4223,7 +4144,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loaded and returning hand to trigger 2
     {
@@ -4257,7 +4178,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //loaded and returning hand to trigger 3
     {
@@ -4291,7 +4212,7 @@ colorString:["40 ",
 "20 f3e16 ",
 "20 4f16 ",
 ],
-pallet:pallets.CRB,
+palette:palettes.CRB,
     },
     //READY TO FIRE!!! (emphasis repeat)
     repeats.crossBasicR2F,
@@ -4345,7 +4266,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4403,7 +4324,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4461,7 +4382,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4519,7 +4440,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4577,7 +4498,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4635,7 +4556,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4693,7 +4614,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4751,7 +4672,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4809,7 +4730,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4867,7 +4788,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4925,7 +4846,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -4983,7 +4904,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5041,7 +4962,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5099,7 +5020,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5157,7 +5078,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5215,7 +5136,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5273,7 +5194,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5331,7 +5252,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5389,7 +5310,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5447,7 +5368,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5505,7 +5426,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5563,7 +5484,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5621,7 +5542,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5679,7 +5600,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5737,7 +5658,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5795,7 +5716,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5853,7 +5774,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5911,7 +5832,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -5969,7 +5890,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6027,7 +5948,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6087,7 +6008,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6145,7 +6066,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6203,7 +6124,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6261,7 +6182,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6319,7 +6240,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6377,7 +6298,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6435,7 +6356,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6493,7 +6414,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6551,7 +6472,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6609,7 +6530,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6667,7 +6588,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6725,7 +6646,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6783,7 +6704,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6841,7 +6762,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6899,7 +6820,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -6957,7 +6878,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7015,7 +6936,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7073,7 +6994,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7131,7 +7052,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7189,7 +7110,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7247,7 +7168,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7305,7 +7226,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7363,7 +7284,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7421,7 +7342,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7479,7 +7400,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7537,7 +7458,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7595,7 +7516,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7653,7 +7574,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7711,7 +7632,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7769,7 +7690,7 @@ colorString:[
 "                                        ",
 "                                        ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -7847,7 +7768,7 @@ colorString:["40 ",
 "30 g3f6 ",
 "27 m3fee7 ",
 "27 m3fee7 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //lighting fuse 2
 {
@@ -7904,7 +7825,7 @@ colorString:["40 ",
 "30 g3f6 ",
 "27 m3fee7 ",
 "27 m3fee7 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //getting rid of torch--fuse burns down
 {
@@ -7961,7 +7882,7 @@ colorString:["40 ",
 "29 g3f7 ",
 "29 mee8 ",
 "29 mee8 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //fuse burning 2
 {
@@ -8018,7 +7939,7 @@ colorString:["40 ",
 "28 g3f8 ",
 "28 mee9 ",
 "28 mee9 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //fuse burning 3
 {
@@ -8075,7 +7996,7 @@ colorString:["40 ",
 "27 g3f9 ",
 "28 ee10 ",
 "28 ee10 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //firing
 {
@@ -8133,7 +8054,7 @@ colorString:["40 ",
 "27 g3f9 ",
 "28 ee10 ",
 "28 ee10 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //just after firing
 {
@@ -8191,7 +8112,7 @@ colorString:["40 ",
 "27 g3f9 ",
 "28 ee10 ",
 "28 ee10 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 1
 {
@@ -8248,7 +8169,7 @@ colorString:["40 ",
 "27 eff4g6 ",
 "26 3ef3g7 ",
 "27 e12 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 2
 {
@@ -8304,7 +8225,7 @@ colorString:["40 ",
 "30 f6gf  ",
 "31 6g3 ",
 "32 4g4 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 3
 {
@@ -8356,7 +8277,7 @@ colorString:["40 ",
 "30 f6gf  ",
 "31 6g3 ",
 "32 4g4 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 4
 {
@@ -8404,7 +8325,7 @@ colorString:["40 ",
 "28 3f6gf  ",
 "31 6g3 ",
 "32 4g4 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 5
 {
@@ -8448,7 +8369,7 @@ colorString:["40 ",
 "16 bccddccb6 f6gf  ",
 "17 bbccbb8 6g3 ",
 "19 aa11 4g4 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 6
 {
@@ -8492,7 +8413,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 7
 {
@@ -8536,7 +8457,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 8
 {
@@ -8580,7 +8501,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 9
 {
@@ -8624,7 +8545,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 10
 {
@@ -8668,7 +8589,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 11
 {
@@ -8712,7 +8633,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 12
 {
@@ -8756,7 +8677,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 13
 {
@@ -8800,7 +8721,7 @@ colorString:["26 eef11 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 14
 {
@@ -8844,7 +8765,7 @@ colorString:["24 ee14 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking to reload 15
 {
@@ -8888,7 +8809,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //pouring powder 1
 {
@@ -8932,7 +8853,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //pouring powder 2
 {
@@ -8976,7 +8897,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //pouring powder 3
 {
@@ -9020,7 +8941,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //finished pouring powder
 {
@@ -9064,7 +8985,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //littering
 {
@@ -9108,7 +9029,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder, bag goes flying [no fade]
 {
@@ -9152,7 +9073,7 @@ colorString:["8 3p29 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 2 [fade 1]
 {
@@ -9196,7 +9117,7 @@ colorString:["8 3s29 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 3 [fade 2]
 {
@@ -9240,7 +9161,7 @@ colorString:["8 3u29 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 4
 {
@@ -9284,7 +9205,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 5
 {
@@ -9328,7 +9249,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 6
 {
@@ -9372,7 +9293,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 7
 {
@@ -9416,7 +9337,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 8
 {
@@ -9461,7 +9382,7 @@ colorString:[
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 9
 {
@@ -9505,7 +9426,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //ramming powder 10
 {
@@ -9549,7 +9470,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //removing arm
 {
@@ -9593,7 +9514,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //removing arm 2
 {
@@ -9637,7 +9558,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //turning to get cannonball
 {
@@ -9681,7 +9602,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //about to get cannonball
 {
@@ -9725,7 +9646,7 @@ colorString:["22 ee16 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //getting cannonball 1
 {
@@ -9769,7 +9690,7 @@ colorString:["19 mffee16 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //getting cannonball 2
 {
@@ -9813,7 +9734,7 @@ colorString:["19 3fee16 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //getting cannonball 3
 {
@@ -9857,7 +9778,7 @@ colorString:["19 3fee16 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //has cannonball
 {
@@ -9901,7 +9822,7 @@ colorString:["19 3fee16 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //carying cannonball to cannon
 {
@@ -9945,7 +9866,7 @@ colorString:["20 e19 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //carying cannonball to cannon 2
 {
@@ -9989,7 +9910,7 @@ colorString:["20 e19 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //loading 1
 {
@@ -10033,7 +9954,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //loading 2
 {
@@ -10077,7 +9998,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //loaded (THE CANNONBALL HAS LANDED!!!)
 {
@@ -10121,7 +10042,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //returning arms
 {
@@ -10165,7 +10086,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //turning--about to walk back. -_-
 {
@@ -10209,7 +10130,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //turned
 {
@@ -10253,7 +10174,7 @@ colorString:["19 ee19 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 1
 {
@@ -10297,7 +10218,7 @@ colorString:["23 eem14 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 2
 {
@@ -10341,7 +10262,7 @@ colorString:["27 eefm9 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 3
 {
@@ -10385,7 +10306,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 4
 {
@@ -10429,7 +10350,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 5
 {
@@ -10473,7 +10394,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 6
 {
@@ -10517,7 +10438,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 7
 {
@@ -10561,7 +10482,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 8
 {
@@ -10605,7 +10526,7 @@ colorString:["40 ",
 "16 bccddccb16 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 9
 {
@@ -10649,7 +10570,7 @@ colorString:["40 ",
 "16 bccddccb8 gffg4 ",
 "17 bbccbb17 ",
 "19 aa19 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 10
 {
@@ -10695,7 +10616,7 @@ colorString:["40 ",
 "19 aa7 mm3gff3g  ",
 "31 ggffgg3 ",
 "32 gffg4 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 11
 {
@@ -10750,7 +10671,7 @@ colorString:[
 "29 ff3gfegg  ",
 "30 3gf3e3 ",
 "35 e4 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //walking back 12
 {
@@ -10808,7 +10729,7 @@ colorString:[
 "26 g3f10 ",
 "27 ee11 ",
 "27 ee11 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //getting fuse
 {
@@ -10865,7 +10786,7 @@ colorString:["40 ",
 "26 g3f10 ",
 "24 mffee11 ",
 "24 mffee11 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //getting fuse 2
 {
@@ -10922,7 +10843,7 @@ colorString:["40 ",
 "22 3f g3f10 ",
 "23 4fee11 ",
 "24 3fee11 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //has fuse
 {
@@ -10979,7 +10900,7 @@ colorString:["40 ",
 "22 3f g3f10 ",
 "23 4fee11 ",
 "24 3fee11 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //turning to add fuse
 {
@@ -11035,7 +10956,7 @@ colorString:["40 ",
 "22 ggeff4g9 ",
 "23 3ef3g10 ",
 "24 e15 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //adding fuse 1
 {
@@ -11091,7 +11012,7 @@ colorString:["40 ",
 "20 ffeff4g11 ",
 "21 3ef3g12 ",
 "22 e17 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //adding fuse 2
 {
@@ -11147,7 +11068,7 @@ colorString:["40 ",
 "20 ffeff4g11 ",
 "21 3ef3g12 ",
 "22 e17 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //stepping back
 {
@@ -11204,7 +11125,7 @@ colorString:["40 ",
 "26 g3f10 ",
 "24 mffee11 ",
 "24 mffee11 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //getting torch
 {
@@ -11261,7 +11182,7 @@ colorString:["40 ",
 "21 3f  g3f10 ",
 "22 5fee11 ",
 "23 4fee11 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //getting torch 2
 {
@@ -11318,7 +11239,7 @@ colorString:["40 ",
 "21 3f  g3f10 ",
 "22 5fee11 ",
 "23 4fee11 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //has torch
 {
@@ -11375,7 +11296,7 @@ colorString:["40 ",
 "21 3f  g3f10 ",
 "22 5fee11 ",
 "23 4fee11 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 //stepping back
 {
@@ -11432,7 +11353,7 @@ colorString:["40 ",
 "30 g3f6 ",
 "27 m3fee7 ",
 "27 m3fee7 ",],
-pallet:pallets.CB,
+palette:palettes.CB,
     },
 ],//2
 //projectiles{
@@ -11459,7 +11380,7 @@ colorString:[
 "bhb                 ",
 "bhb                 ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(210,210,210,255),
 "b":color(190,190,190,255),
@@ -11491,7 +11412,7 @@ colorString:[
 "bhb                 ",
 "b b                 ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(230, 230, 230,255),
 "b":color(255, 111, 0,255),
@@ -11509,7 +11430,7 @@ colorString:[
 "aha",
 "aha",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(150, 150, 150),
 "b":color(190,190,190,255),
@@ -11531,7 +11452,7 @@ colorString:[
 "  j     k",
 "     l",
 ],
-pallet:{
+palette:{
 "a":color(150, 150, 150),
 "h":color(255,135,72,255),
 "j":color(255,67,0,255),
@@ -11553,7 +11474,7 @@ colorString:[
 " l",
 "     ",
 ],
-pallet:{
+palette:{
 "a":color(150, 150, 150),
 "h":color(255,135,72,255),
 "j":color(255,67,0,255),
@@ -11575,7 +11496,7 @@ colorString:[
 "     j",
 " l",
 ],
-pallet:{
+palette:{
 "a":color(150, 150, 150),
 "h":color(255,135,72,255),
 "j":color(255,67,0,255),
@@ -11601,7 +11522,7 @@ colorString:[
 "  h   j",
 "   h j",
 ],
-pallet:{
+palette:{
 "h":color(255, 255, 100,255),
 "a":color(150, 150, 150),
 "j":color(100, 236, 255,255),
@@ -11622,7 +11543,7 @@ colorString:[
 " j     h",
 "  j   h",
 ],
-pallet:{
+palette:{
 "h":color(255, 255, 100,255),
 "a":color(150, 150, 150),
 "j":color(100, 236, 255,255),
@@ -11643,7 +11564,7 @@ colorString:[
 "  h   j",
 " h     j",
 ],
-pallet:{
+palette:{
 "h":color(255, 255, 100,255),
 "a":color(150, 150, 150),
 "j":color(100, 236, 255,255),
@@ -11664,7 +11585,7 @@ colorString:[
 "   j h ",
 "  j   h",
 ],
-pallet:{
+palette:{
 "h":color(255, 255, 100,255),
 "a":color(150, 150, 150),
 "j":color(100, 236, 255,255),
@@ -11685,7 +11606,7 @@ colorString:[
 "    j",
 "   h j",
 ],
-pallet:{
+palette:{
 "h":color(255, 255, 100,255),
 "a":color(150, 150, 150),
 "j":color(100, 236, 255,255),
@@ -11706,7 +11627,7 @@ colorString:[
 "   h h",
 "    h",
 ],
-pallet:{
+palette:{
 "h":color(255, 255, 100,255),
 "a":color(150, 150, 150),
 "j":color(100, 236, 255,255),
@@ -11722,7 +11643,7 @@ colorString:[
 "aabbaa",
 " aaaa ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(50,50,50,255),
 "b":color(70,70,70,255),
@@ -11765,7 +11686,7 @@ colorString:[
 "                              ",
 "                              ",
 ],
-pallet:{
+palette:{
 " ":color(255,255,255,0),
 "a":color(255,0,0,255),
 "i":color(216,194,137,255),
@@ -11826,7 +11747,7 @@ this.buffer = 0;
 
 this.saveWidth = 0;
 
-this.pallet = art.pallet;
+this.palette = art.palette;
 
 if (liny === true) {stroke(0, 0, 0);}
 else{noStroke();}
@@ -11852,7 +11773,7 @@ else{
     this.t = Number(this.t) || 1;
     this.c = this.colorString[y][x];
     if(this.c!==" "){
-    fill(this.pallet[this.c]);
+    fill(this.palette[this.c]);
     
     rect((this.buffer+x)*psize, y*psize, this.t*psize, psize);
     }
@@ -11970,7 +11891,7 @@ var zapNum = 0;
 
 
 draw = function() {
-    
+    try{
     //loading code
     //{
     
@@ -12397,6 +12318,10 @@ for(var j = saveVars.fire_bolt.length; j--;){
     }
     //}//}
     //background(255, 255, 255);
+    }
+    catch(err){
+    println(err);
+    }
 };
 
 //so... many... lines.
