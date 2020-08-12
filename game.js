@@ -2,9 +2,6 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(600, 600); 
       frameRate(60);
-        
-        
-        
         /**To-do (in no particular order)
  * 
 OsuKi-ai and maybe graphics team:
@@ -18114,7 +18111,7 @@ var menu_imgs = {};
 
 var target_imgs = {};
 //}empty animation img arrays to be filled later
-//}Graphics storage. All graphics made by OsuKi-ai, excepting the boss target by Leviathan Programming.
+//}Graphics storage. See graphics credits for more info on who made this.
 //{
 //pixel function
 var pixel = function(x, y, color, outline, pickleSize){
@@ -19205,7 +19202,7 @@ var tower = function(type, x, y, ai){
                 {array:[], i:0},
                 {array:[], i:0},
             ];
-            this.extraUpgrades[0].array.push({name:"More damage", description:"Damage increased by a good amount.", cost:5, function:function(tower){
+            this.extraUpgrades[0].array.push({name:"More damage", description:"Damage increased by a good amount. Bob", cost:5, function:function(tower){
                 tower.damage *= 1.5;
             }});
             this.extraUpgrades[1].array.push({name:"Faster Shooting", description:"Makes the tower shoot faster", cost:5, function:function(tower){
@@ -19215,6 +19212,19 @@ var tower = function(type, x, y, ai){
                 tower.sightRange *= 1.8;
                 tower.range *= 2;
                 tower.damage *= 1.2;
+            }});
+            this.upgrades[0].array.push({name:"Boom Crossbow", description:"Currently uses Big Bow stats", cost:5, function:function(tower){
+                tower.name = "Boom\nCrossbow";
+                tower.delay += 10;
+                tower.bulletType = "big arrow";
+                tower.damage *= 2.5;
+                tower.pierce += 4;
+                tower.range *= 1.5;
+                tower.sightRange += 100;
+                tower.upgrades[0] = tower.extraUpgrades[0];
+                tower.upgrades[1] = tower.extraUpgrades[1];
+                tower.upgrades[2] = tower.extraUpgrades[2];
+                tower.animation = new animation(crossboom_imgs, [3], 0, 0, 22, 18, 10, tower);
             }});
             /*
             this.upgrades[0].array.push({name:"Big Bow", description:"A much bigger bow.", cost:5, function:function(tower){
@@ -19249,7 +19259,7 @@ var tower = function(type, x, y, ai){
                 tower.pierce += 2;
             }});
             */
-            this.upgrades = this.extraUpgrades;
+            //this.upgrades = this.extraUpgrades;
             this.animation = new animation(crossbow_imgs, [3], 0, 0, 22, 18, 10, this);
         }break;
     }
@@ -20123,6 +20133,9 @@ var mouseClicked = function(){
     mouseIsClicked = true;
 };
 //}mouseClicked handler
+
+        
+        
         
       
     }};
